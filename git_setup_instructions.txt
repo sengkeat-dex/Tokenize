@@ -9,6 +9,10 @@ git config --global user.email "sengkeat-dex@outlook.com"
 git config --global user.name "sengkeat-dex"
 git add .
 git status
+
+# If there are deleted files showing in status, remove them from staging
+git add -u
+
 git commit -m "Initial commit with tokenization platform"
 git branch -M main
 
@@ -23,5 +27,10 @@ git push -u origin main
 
 If you already have an existing repository on GitHub, you might need to force push the first time:
 git push -u origin main --force
+
+If you have deleted files and want to ignore them:
+git add -u
+git commit -m "Update repository, ignoring deleted files"
+git push origin main
 
 Note: Make sure you have git installed and configured with your GitHub credentials.
