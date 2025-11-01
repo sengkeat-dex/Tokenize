@@ -227,6 +227,7 @@ class TokenizationHandler(BaseHTTPRequestHandler):
                     # Create a new asset
                     asset_type_str = data.get('asset_type', 'other')
                     
+                    # Create the asset with string values (the core_component will handle conversion)
                     asset = core_component.TokenizedAsset(
                         asset_id=data['id'],
                         name=data['name'],
@@ -261,6 +262,7 @@ class TokenizationHandler(BaseHTTPRequestHandler):
                     # Create a new wallet
                     wallet_type_str = data.get('wallet_type', 'custodial')
                     
+                    # Create the wallet with string values (the core_component will handle conversion)
                     wallet = core_component.DigitalWallet(
                         wallet_id=data['id'],
                         owner=data['owner'],
