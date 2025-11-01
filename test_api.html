@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Core Component API</title>
+</head>
+<body>
+    <h1>Test Core Component API</h1>
+    <button onclick="getAssets()">Get Assets</button>
+    <button onclick="createAsset()">Create Asset</button>
+    <button onclick="getWallets()">Get Wallets</button>
+    <button onclick="createWallet()">Create Wallet</button>
+    <div id="output"></div>
+
+    <script>
+        const baseUrl = 'http://localhost:3032/api/core';
+        
+        async function getAssets() {
+            try {
+                const response = await fetch(`${baseUrl}/assets`);
+                const data = await response.json();
+                document.getElementById('output').innerHTML = `<pre>${JSON.stringify(data, null, 2)}</pre>`;
+            } catch (error) {
+                document.getElementById('output').innerHTML = `<p>Error: ${error.message}</p>`;
+            }
+        }
+        
+        async function createAsset() {
+            const assetData = {
+                id: 'asset_001',
+                name: 'Tech Company Equity Shares',
+                asset_type: 'equity',
+                value: 50000.0,
+                owner: 'user_001',
+                metadata: {
+                    issuer: 'Example Corp',
+                    country: 'USA'
+                }
+            };
+            
+            try {
+                const response = await fetch(`${baseUrl}/assets`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(assetData)
+                });
+                const data = await response.json();
+                document.getElementById('output').innerHTML = `<pre>${JSON.stringify(data, null, 2)}</pre>`;
+            } catch (error) {
+                document.getElementById('output').innerHTML = `<p>Error: ${error.message}</p>`;
+            }
+        }
+        
+        async function getWallets() {
+            try {
+                const response = await fetch(`${baseUrl}/wallets`);
+                const data = await response.json();
+                document.getElementById('output').innerHTML = `<pre>${JSON.stringify(data, null, 2)}</pre>`;
+            } catch (error) {
+                document.getElementById('output').innerHTML = `<p>Error: ${error.message}</p>`;
+            }
+        }
+        
+        async function createWallet() {
+            const walletData = {
+                id: 'wallet_001',
+                owner: 'user_001',
+                wallet_type: 'custodial'
+            };
+            
+            try {
+                const response = await fetch(`${baseUrl}/wallets`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(walletData)
+                });
+                const data = await response.json();
+                document.getElementById('output').innerHTML = `<pre>${JSON.stringify(data, null, 2)}</pre>`;
+            } catch (error) {
+                document.getElementById('output').innerHTML = `<p>Error: ${error.message}</p>`;
+            }
+        }
+    </script>
+</body>
+</html>
