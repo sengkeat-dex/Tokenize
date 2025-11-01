@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tokenization Digital Wallet</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .filters {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .filter-btn {
+            background-color: #007acc;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            margin: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .filter-btn:hover {
+            background-color: #005a9e;
+        }
+        .component {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 10px 0;
+            background-color: #f9f9f9;
+        }
+        .component h3 {
+            margin-top: 0;
+            color: #333;
+        }
+        .component-type {
+            font-weight: bold;
+            color: #007acc;
+        }
+        .component-subtype {
+            font-style: italic;
+            color: #666;
+        }
+        .component-details {
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #fff;
+            border-left: 3px solid #007acc;
+        }
+        .loading {
+            text-align: center;
+            color: #666;
+        }
+        .error {
+            color: #d32f2f;
+            background-color: #ffebee;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Tokenization Digital Wallet Components</h1>
+        <p>Explore the various components of digital wallet tokenization</p>
+    </div>
+    
+    <div class="filters">
+        <button class="filter-btn" data-type="all">All Components</button>
+        <button class="filter-btn" data-type="Digital Wallet">Digital Wallet</button>
+        <button class="filter-btn" data-type="Asset Tokenization">Asset Tokenization</button>
+        <button class="filter-btn" data-type="Issuance & Lifecycle">Issuance & Lifecycle</button>
+        <button class="filter-btn" data-type="Security Architecture">Security Architecture</button>
+        <button class="filter-btn" data-type="Protection Framework">Protection Framework</button>
+    </div>
+    
+    <div id="components-container">
+        <div class="loading">Loading components...</div>
+    </div>
+
+    <script src="src/index.js"></script>
+</body>
+</html>

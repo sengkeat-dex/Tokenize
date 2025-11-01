@@ -1,0 +1,77 @@
+Main Type,Sub Type,Components
+Asset Tokenization,Public Equities,ERC-1400/3643 security tokens; corporate actions mapping; KYC/AML whitelists; transfer restrictions; oracle-based pricing; disclosure hooks
+Asset Tokenization,Private Equity / Venture,Cap table on-chain; SAFE/convertible notes as tokens; lockups/vesting; data rooms access control; investor accreditation checks; secondary trading rules
+Asset Tokenization,Debt: Corporate Bonds,Coupon schedule smart contracts; DvP settlement; interest accrual math; ISIN/CFI mapping; trustee role; default/acceleration events
+Asset Tokenization,Debt: Sovereign Bonds,Auction/primary issuance; primary dealer roles; T+0/T+1 settlement rails; withholding/tax logic; interest calendars; buyback/redemption flows
+Asset Tokenization,Money Market Instruments,T-bills/commercial paper as tokens; rolling maturities; yield accrual; whitelist-only transfers; NAV/oracle; redemption windows
+Asset Tokenization,Funds (ETF/Mutual),Share registry on-chain; creation/redemption baskets; NAV calculation; swing pricing; authorized participant workflows; disclosure scheduling
+Asset Tokenization,Real Estate (Equity),SPV shares as tokens; rent/dividend distribution; property registry linkage; appraisal oracle; maintenance reserve; right of first refusal
+Asset Tokenization,Real Estate (Debt),Mortgage tokens; amortization schedule; lien priority; foreclosure workflow; escrow agents; servicing rights as NFTs
+Asset Tokenization,Commodities,Warehouse receipts; bar serials; assay/origin proofs; custody chain-of-custody; delivery/retirement; storage/insurance fees accrual
+Asset Tokenization,FX & Currency Baskets,Tokenized fiat claims; PvP settlement; FX oracle; basket rebalancing; liquidity provider program; reporting hooks
+Asset Tokenization,Carbon & Environmental Credits,Vintage/project metadata; double-spend prevention; retirement registry sync; bridging between standards; pricing oracle; MRV attestations
+Asset Tokenization,Intellectual Property / Royalties,IP-NFTs; royalty split contracts; usage reporting oracles; audit rights; buyout options; time-bound licenses
+Asset Tokenization,Art & Collectibles,Provenance registry; fractionalization; physical/digital custody bridge; appraisal events; redemption & shipping logistics
+Asset Tokenization,Derivatives (Options/Futures),Margining; collateral tokens; expiry/settlement logic; price oracles; auto-deleveraging; clearing member roles
+Asset Tokenization,Structured Products,Payoff formulas; tranche seniority; waterfall distribution; eligibility checks; early call/put rules; scenario disclosure
+Asset Tokenization,Revenue Share / Cash Flow Tokens,Revenue oracle; distribution periods; clawback; audit proofs; payment routing; rights revocation
+Asset Tokenization,Loyalty/Points & Real-World Credits,Issuance caps; earn/burn rules; merchant settlement; fraud prevention; interchange fees; compliance per region
+Asset Tokenization,Gaming & In‑App Assets,Mint/burn policies; marketplace royalty; anti-bot/anti-fraud; parental/age gating; regional compliance
+Asset Tokenization,CBDC Readiness (Interface),Wholesale/retail CBDC adapter; KYC tiers; transaction limits; offline mode hooks; AML event streaming; reporting
+Issuance & Lifecycle,Primary Issuance,Bookbuilding; subscription smart contracts; investor KYC; payment rails; allocation engine; cap table minting
+Issuance & Lifecycle,Secondary Trading Enablement,Transfer restrictions; whitelist registries; broker/dealer roles; RWA marketplace adapters; trading windows; disclosure gating
+Issuance & Lifecycle,Corporate Actions,Dividends/coupons; splits; proxy/voting; tender offers; conversions; airdrop equivalents with eligibility proofs
+Issuance & Lifecycle,Redemption & Buybacks,NAV-based redemptions; liquidity gates; fees/penalties; settlement flows; tax/withholding; burn/treasury mechanics
+Issuance & Lifecycle,Compliance & Reporting,Rule 144/Reg S clocks; suitability; beneficial ownership; transaction reporting; audit trails; FATCA/CRS data paths
+Market Infrastructure,Standards & Protocols,ERC‑20/721/1155; ERC‑1400/3643 (security tokens); ERC‑4626 (vaults); ERC‑1271 (contract signatures); ISO 20022 mapping
+Market Infrastructure,Settlement (DvP/PvP),Atomic swap rails; HTLC/hashed-time-locks; RTGS connectors; netting; T+0/T+1 modes; fail/repair workflows
+Market Infrastructure,Registries & Transfer Agents,On-chain share registries; identity-linked balances; role‑based transfers; registrar approvals; cap-table integrity checks
+Market Infrastructure,Oracles & Pricing,TWAP/VWAP; reference rates; NAV; appraisal feeds; circuit breakers; fallback tiers with quorum
+Market Infrastructure,Custody & Safekeeping,Cold/warm/hot tiers; MPC/TSS; segregation of assets; reconciliations; proof of reserves; insurance integration
+Market Infrastructure,Tax & Accounting,Double-entry ledgers; lot tracking; cost basis; withholding; 1099/1042-S/CRS/FATCA exports; audit evidence
+Market Infrastructure,Legal Entities & SPVs,Jurisdiction selection; SPV formation; trustee models; prospectus/PPM storage; director approvals; filings APIs
+Compliance & Identity,KYC/AML/Screening,Document checks; PEP/sanctions; risk scoring; liveness; ongoing monitoring; travel rule/IVMS101
+Compliance & Identity,Accreditation & Suitability,Accredited investor proofs; jurisdiction eligibility; wealth/income checks; product suitability surveys; attestations
+Compliance & Identity,Identity Standards,DIDs/VCs; OAuth2/OIDC; mDL/eID adapters; privacy-preserving proofs (ZKPs); selective disclosure
+Compliance & Identity,Policy Engines,OPA/Kyverno policies; jurisdiction matrices; product risk tiers; transaction limits; exception workflows
+Liquidity & Distribution,Market Venues,ATS/MTF integrations; DEX/AMM/PMM adapters; RFQ; auction mechanisms; batch auctions; circuit-breaker rules
+Liquidity & Distribution,Liquidity Programs,Market-making incentives; staking/locking; fee rebates; vesting for LPs; inventory loans; treasury counterparties
+Liquidity & Distribution,Bridging & Interop,Cross-chain bridges; light clients; CCIP/XCM/IBC; custodial bridges; message/asset verification; rate limits
+Digital Wallet,Custodial,KYC account; omnibus/segregated ledgers; withdrawal policies; support SLAs; compliance monitoring; chargeback-like flows
+Digital Wallet,Non‑Custodial,Seed/MPC/TSS; passkeys; device encryption; account abstraction; social recovery; multi‑factor approvals
+Digital Wallet,Hybrid / Co‑Custody,Sharded keys; shared controls; enterprise guardian; programmable policies; emergency freeze; recovery quorum
+Digital Wallet,Key Management Options,Seed phrase; passkeys (WebAuthn); hardware wallets; secure enclave; MPC/TSS with quorum; rotation policies
+Digital Wallet,Account Abstraction (AA),Smart accounts; session keys; sponsored gas; batched ops; spending limits; guardians/recovery
+Digital Wallet,Compliance-Aware Wallet,Travel rule metadata; screening at send; jurisdiction rules; tx notes; anomaly alerts; consent/cert capture
+Digital Wallet,Fiat On/Off Ramps,Bank transfers; cards; instant rails; stablecoin ramps; FX conversion; compliance checks
+Digital Wallet,Payments & Commerce,Invoices; recurring payments; subscriptions; POS; QR; invoicing standards (ISO20022); refunds/disputes
+Digital Wallet,Payouts & Payroll,Mass payouts; pay cycles; withholding/tax; payslips; stablecoin rails; compliance exports
+Digital Wallet,Treasury & Cash Mgmt,Multi‑wallet policies; term deposits; MMFs/T‑bill tokens; concentration limits; reporting; four‑eyes approvals
+Digital Wallet,DeFi Access Controls,Allow/Deny lists; protocol risk tiers; transaction simulation; spend caps; session approvals; transaction policy logs
+Digital Wallet,User Experience & Safety,Human‑readable addresses; transaction previews; risk labels; phishing protection; notification center; support flows
+Digital Wallet,Recovery & Continuity,Social recovery; hardware backups; inheritance; dead‑man switch; business continuity kits; emergency contacts
+Risk & Controls,Smart Contract Risk,Formal verification; property tests; audit; bug bounty; upgrade timelocks; pause/guardian; on‑chain simulations
+Risk & Controls,Market & Liquidity Risk,Price limits; circuit breakers; min liquidity thresholds; inventory risk; slippage guards; stress testing
+Risk & Controls,Operational & Custody Risk,Dual control; reconciliations; key ceremonies; access reviews; disaster recovery drills; insurance coverage
+Risk & Controls,Data & Privacy Risk,Minimization; encryption; tokenization of PII; retention policies; DLP; secure analytics workspaces
+Data & Analytics,NAV/Valuation & Pricing,NAV calc engines; oracle aggregation; fair‑value policies; market data adapters; audit trails
+Data & Analytics,Reporting & Disclosures,Investor statements; KIDs/PRIIPs; factsheets; ESG; real‑time dashboards; export APIs
+Data & Analytics,Indexing & Subgraphs,Event indexing; subgraphs; ETL; query APIs; analytics warehouse; lineage and quality checks
+Token Economics,Fractionalization & Access,Minimum ticket size reduction; nested funds; tranches; secondary liquidity; eligibility gates
+Token Economics,Revenue & Fee Model,Mint/redeem fees; management/performance fees; spread; market‑making incentives; rebates; buyback policies
+Token Economics,Staking / Yield,Rehypothecation rules; collateralization; over‑collateral limits; yield sources; risk disclosures; auto‑compounding
+Token Economics,Governance & Voting,On‑chain voting; delegate registry; quorum rules; proposal lifecycle; disclosures; audit trail
+Developer & Ops,SDKs & APIs,Wallet SDKs; issuance/trading APIs; compliance hooks; event webhooks; sandbox & testnets; typed clients
+Developer & Ops,DevSecOps & CI/CD,SBOM; sig‑verify; policy lint; secret scanning; test matrices; promotion gates; evidence archiving
+Developer & Ops,Observability,Logs/metrics/traces; SLO dashboards; business KPIs; anomaly detection; incident runbooks; status page
+Standards Roadmap,Short‑Term,ERC‑20/721; ISO20022 mapping; KYC/AML basic; custody adapters; DEX/ATS connectivity
+Standards Roadmap,Mid‑Term,ERC‑1400/3643; account abstraction; ZKP credentials; DvP/PvP atomic settlement; formal corporate actions
+Standards Roadmap,Long‑Term,CBDC connectors; full securities depository linkage; cross‑border compliance automation; on‑chain RTGS hooks
+Security Architecture,Identity & Access Management,Zero-trust network access; adaptive authentication; privileged identity management; identity federation; attribute-based access control; just-in-time access
+Security Architecture,Threat Intelligence & Hunting,Threat intelligence feeds; indicators of compromise (IOCs); threat modeling; red team exercises; cyber threat hunting; attack surface management
+Security Architecture,Security Operations Center (SOC),24/7 monitoring; incident response coordination; forensic analysis; threat containment; security orchestration; automated response
+Security Architecture,Cryptographic Services,Key generation and storage; digital signatures; cryptographic protocols; certificate management; encryption algorithms; post-quantum cryptography
+Security Architecture,Vulnerability Management,Continuous scanning; risk assessment; patch prioritization; vulnerability remediation tracking; third-party vulnerability monitoring; penetration testing
+Protection Framework,Data Loss Prevention (DLP),Content discovery; policy enforcement; endpoint protection; network monitoring; cloud data protection; incident response
+Protection Framework,Business Resilience,Disaster recovery plans; business impact analysis; recovery time objectives; recovery point objectives; crisis communication; alternate site operations
+Protection Framework,Regulatory Compliance,Regulatory gap analysis; compliance monitoring; audit preparation; regulatory reporting; compliance training; policy management

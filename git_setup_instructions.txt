@@ -1,0 +1,27 @@
+To push this repository to GitHub, please follow these steps:
+
+1. Open a terminal/command prompt in the project directory (c:\Users\USER\Documents\tokenize)
+
+2. Run the following commands one by one:
+
+git init
+git config --global user.email "sengkeat-dex@outlook.com"
+git config --global user.name "sengkeat-dex"
+git add .
+git status
+git commit -m "Initial commit with tokenization platform"
+git branch -M main
+
+# Check if remote origin exists and remove it if it does
+git remote get-url origin >nul 2>&1
+if %errorlevel% equ 0 (
+    git remote remove origin
+)
+
+git remote add origin https://github.com/sengkeat-dex/Tokenize.git
+git push -u origin main
+
+If you already have an existing repository on GitHub, you might need to force push the first time:
+git push -u origin main --force
+
+Note: Make sure you have git installed and configured with your GitHub credentials.
